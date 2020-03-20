@@ -1,0 +1,5 @@
+<!--miniprogram/pages/clubSort/clubSort.wxml-->
+<view class="index-header">
+  <image src="./../../images/qd.gif"></image>
+  <mp-searchbar placeholder="搜索文章" cancel='{{false}}'></mp-searchbar>
+</view>

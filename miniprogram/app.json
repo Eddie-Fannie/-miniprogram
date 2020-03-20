@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/clubIndex/clubIndex",
+    "pages/clubSort/clubSort",
+    "pages/clubMe/clubMe"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#120c14",
+    "navigationBarTitleText": "前端Club",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#2686FF",
+    "list": [
+      {
+        "pagePath": "pages/clubIndex/clubIndex",
+        "text": "文章",
+        "iconPath": "images/clubIndex.png",
+        "selectedIconPath": "images/clubIndexSelected.png"
+      },
+      {
+        "pagePath": "pages/clubSort/clubSort",
+        "text": "分类",
+        "iconPath": "images/clubIndex.png",
+        "selectedIconPath": "images/clubIndexSelected.png"
+      },
+      {
+        "pagePath": "pages/clubMe/clubMe",
+        "text": "我的",
+        "iconPath": "images/wodehui.png",
+        "selectedIconPath": "images/wodelan.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

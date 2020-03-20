@@ -1,0 +1,6 @@
+.swiper-item {
+  background-color: green;
+}
+.demo-text-1 {
+  background-color: red;
+}

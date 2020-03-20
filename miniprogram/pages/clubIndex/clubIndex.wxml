@@ -1,0 +1,12 @@
+<!--miniprogram/pages/clubIndex/clubIndex.wxml-->
+<view class="swiper-post">
+  <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+          <image src="{{item}}"></image>
+            <!-- <view class="swiper-item {{item}}"></view> -->
+          </swiper-item>
+        </block>
+  </swiper>
+</view>
