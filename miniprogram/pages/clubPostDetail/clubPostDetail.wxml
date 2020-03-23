@@ -27,11 +27,39 @@
         <mp-icon icon="share" color="{{btnShareColor}}"></mp-icon>
         <text>分享</text>
       </button>
+      <button class="bill">
+        <mp-icon icon="album" color="{{btnBillColor}}"></mp-icon>
+        <text>生成海报</text>
+      </button>
     </view>
     <view class="comment">
-      <text>文章评论</text>
-      <input placeholder="说点什么吧..." bindfocus="bindKeyFocus" cursor="8"></input>
-      <button><text>发送</text></button>
+      <text class="comment-top">文章评论</text>
+      <cust-comment></cust-comment>
+      <view class="comment-list">
+        <view class="user-mess">
+          <image class="user-avatar" src="/images/1.jpeg"></image>
+          <view>
+            <text class="user-name">林嘉恒</text>
+            <text class="comment-time">2019.04.08 02:16</text>
+          </view>
+        </view>
+        <text class="comment-detail">
+              有幸这段时间开始做一款共享APP，因此也就对
+              共享产品做了一些调研，特将这段时间共享的产
+              品信息做个初步总结。
+        </text>
+        <view class="comment-caozuo">
+          <view class="btn-comment btn-first">
+            <mp-icon icon="comment" color="rgba(153,153,153,1)"></mp-icon>
+            <text>回复</text>
+          </view>
+          <view class="btn-comment">
+            <mp-icon icon="like" color="rgba(153,153,153,1)"></mp-icon>
+            <text>20</text>
+          </view>
+        </view>
+        <cust-comment></cust-comment>
+      </view>
     </view>
   </view>
 </view>

@@ -1,0 +1,6 @@
+<!--miniprogram/components/common/comment/comment.wxml-->
+<view id="customize-comment-component">
+      <input placeholder="说点什么吧..." bindfocus="bindKeyFocus" cursor="8"></input>
+      <button><text>发送</text></button>
+      <view class="line"></view>
+</view>

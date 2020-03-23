@@ -1,16 +1,11 @@
-// miniprogram/pages/clubPostDetail/clubPostDetail.js
+// miniprogram/components/common/comment/comment.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    btnLikeColor: 'white',
-    btnShareColor: 'white',
-    btnBillColor: 'white'
-  },
-  bindKeyFocus(e) {
-    console.log(e)
+
   },
 
   /**

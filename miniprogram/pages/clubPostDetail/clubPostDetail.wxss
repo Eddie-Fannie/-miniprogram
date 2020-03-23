@@ -1,137 +1,157 @@
-/* miniprogram/pages/clubPostDetail/clubPostDetail.wxss */
-.post-detail{
+.post-detail {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.post-detail image{
+.post-detail image {
   width: 100%;
   height: 340rpx;
 }
-.post-detail .all-post{
-  
-}
-.post-detail .all-post .other-mess{
+.post-detail .all-post .other-mess {
   display: flex;
   flex-direction: column;
   padding: 40rpx 34rpx 66rpx 40rpx;
   border-bottom: 1px solid #EAEAEA;
 }
-.other-mess .post-title{
-  font-size:52rpx;
-  font-family:PingFangSC-Semibold,PingFang SC;
-  font-weight:600;
-  color:rgba(51,51,51,1);
-  line-height:37px;
+.post-detail .all-post .other-mess .post-title {
+  font-size: 52rpx;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #333333;
+  line-height: 37px;
   margin-bottom: 46rpx;
 }
-.other-mess .category-time{
+.post-detail .all-post .other-mess .category-time {
   display: flex;
   justify-content: space-between;
 }
-.other-mess .category-time .post-category{
+.post-detail .all-post .other-mess .category-time .post-category {
   height: 40rpx;
-  font-size:34rpx;
-  font-family:PingFangSC-Semibold,PingFang SC;
-  font-weight:600;
-  color:rgb(122, 150, 228);
-  border: 1px solid rgb(122, 150, 228);
+  font-size: 34rpx;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #7a96e4;
+  border: 1px solid #7a96e4;
   padding: 0 22rpx;
 }
-.other-mess .category-time .post-time{
+.post-detail .all-post .other-mess .category-time .post-time {
   text-align: right;
-  font-size:24rpx;
-  font-family:PingFangSC-Regular,PingFang SC;
-  font-weight:400;
-  color:rgba(153,153,153,1);
-  line-height:18px;
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #999999;
+  line-height: 18px;
 }
-.post-detail .all-post .article{
+.post-detail .all-post .article {
   display: flex;
   flex-direction: column;
   padding: 34rpx 34rpx 0rpx 40rpx;
 }
-.all-post .article rich-text{
+.post-detail .all-post .article rich-text {
   margin-bottom: 34rpx;
 }
-.all-post .article .post-tag{
+.post-detail .all-post .article .post-tag {
   display: flex;
   flex-direction: row;
 }
-.post-tag text{
+.post-detail .all-post .article .post-tag text {
   border: 1px solid #ccc;
   height: 48rpx;
   background-color: #F8F8F8;
   border-radius: 2px;
-  font-size:24rpx;
-  font-family:PingFangSC-Regular,PingFang SC;
-  font-weight:400;
-  color:#333333;
-  line-height:24px;
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  line-height: 24px;
   margin-right: 24rpx;
-  padding: 22rpx;
+  padding: 8rpx;
 }
-.all-post .caozuo{
+.post-detail .all-post .caozuo {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 72rpx 34rpx 80rpx 34rpx;
 }
-.caozuo button{
+.post-detail .all-post .caozuo button {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width:208rpx !important;
-  height:120rpx !important;
+  width: 168rpx !important;
+  /* height:80rpx !important; */
   /* line-height: 120rpx; */
-  background:linear-gradient(90deg,rgba(231,0,18,1) 0%,rgba(255,134,7,1) 100%);
-  border-radius:30px;
-  font-size:24rpx;
-  font-family:PingFangSC-Semibold,PingFang SC;
-  font-weight:600;
-  color:rgba(255,255,255,1);
+  background: linear-gradient(90deg, #e70012 0%, #ff8607 100%);
+  border-radius: 30px;
+  font-size: 18rpx;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #ffffff;
 }
-.caozuo button mp-icon{
-  padding: 12rpx 0 6rpx;
-}
-.post-detail .comment{
+.post-detail .all-post .comment {
   padding: 0rpx 34rpx 0rpx 34rpx;
 }
-.post-detail .comment text{
+.post-detail .all-post .comment .comment-top {
   display: block;
   margin-bottom: 50rpx;
-  font-size:32rpx;
-  font-family:PingFangSC-Regular,PingFang SC;
-  font-weight:400;
-  color:rgba(51,51,51,1);
+  font-size: 32rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #333333;
 }
-.comment input{
-  width: 670rpx;
-  height: 68rpx;
-  background-color:rgba(248,248,248,1);
-  border-radius:4px;
-  border: 1px solid #ccc;
-  margin-bottom: 30rpx;
+.post-detail .all-post .comment .comment-list .user-mess {
+  display: flex;
+  align-items: flex-start;
 }
-.comment .input-placeholder{
-  padding-left: 16rpx;
-  font-size:28rpx;
-  font-family:PingFangSC-Regular,PingFang SC;
-  font-weight:400;
-  color:rgba(150,150,150,1);
+.post-detail .all-post .comment .comment-list .user-mess .user-avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 28rpx;
 }
-.comment button{
-  width:144rpx !important;
-  height:60rpx !important;
-  line-height: 60rpx !important;
-  border-radius: 28px !important;
-  margin-right: 0rpx;
-  background-color: #42C02E;
+.post-detail .all-post .comment .comment-list .user-mess view {
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: PingFangSC-Semibold, PingFang SC;
 }
-.comment button text{
-  font-size:24rpx !important;
-  font-family:PingFangSC-Medium,PingFang SC;
-  font-weight:500;
-  color:rgba(255,255,255,1) !important;
+.post-detail .all-post .comment .comment-list .user-mess view .user-name {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333333;
+}
+.post-detail .all-post .comment .comment-list .user-mess view .comment-time {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #999999;
+}
+.post-detail .all-post .comment .comment-list .comment-detail {
+  font-size: 32rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #333333;
+}
+.post-detail .all-post .comment .comment-list .comment-caozuo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 32rpx;
+}
+.post-detail .all-post .comment .comment-list .comment-caozuo .btn-first {
+  margin-right: 56rpx;
+}
+.post-detail .all-post .comment .comment-list .comment-caozuo .btn-comment {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.post-detail .all-post .comment .comment-list .comment-caozuo .btn-comment mp-icon {
+  margin-right: 8rpx;
+}
+.post-detail .all-post .comment .comment-list .comment-caozuo .btn-comment text {
+  font-size: 24rpx;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #999999;
 }
