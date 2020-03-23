@@ -1,12 +1,173 @@
 <!--miniprogram/pages/clubIndex/clubIndex.wxml-->
 <view class="swiper-post">
   <swiper indicator-dots="{{indicatorDots}}"
-        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{tipColor}}" indicator-active-color="{{tipActiveColor}}">
         <block wx:for="{{background}}" wx:key="*this">
           <swiper-item>
-          <image src="{{item}}"></image>
+            <image src="{{item}}"></image>
             <!-- <view class="swiper-item {{item}}"></view> -->
           </swiper-item>
         </block>
   </swiper>
+</view>
+<view class="scroll-titles">
+        <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+        <block wx:for="{{titleList}}" wx:key="index">
+          <view class="scroll-view-item_H  {{listNowIndex==index ? 'tap-active' : ''}}" bindtap="chooseTitle" data-index="{{index}}">{{item}}</view>
+        </block>
+        </scroll-view>
+</view>
+<view class="post-list">
+        <scroll-view scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+          <view class="scroll-view-item" bindtap="toPostDetail">
+            <image src="/images/1.jpeg"></image>
+            <view class="post-mess">
+              <text class="mess-title">关于前端页面，产品经理
+该如何理解如何设哈哈哈哈哈哈</text>
+              <view class="mess-another">
+                <view class="see icon">
+                  <mp-icon icon="eyes-on" size="{{10}}" color="#999999"></mp-icon>
+                  <text>33</text>
+                </view>
+                <view class="like icon">
+                  <mp-icon icon="like" size="{{10}}" color="#999999"></mp-icon>
+                  <text>22</text>
+                </view>
+                <view class="comment icon">
+                  <mp-icon icon="comment" size="{{10}}" color="#999999"></mp-icon>
+                  <text>20</text>
+                </view>
+                <view class="time icon">
+                  <mp-icon icon="time" size="{{10}}" color="#999999"></mp-icon>
+                  <text>2019-12-28</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="scroll-view-item">
+            <image src="/images/2.jpeg"></image>
+            <view class="post-mess">
+              <text class="mess-title">关于前端页面，产品经理
+该如何理解如何设设伟大民族同时不忘学习</text>
+              <view class="mess-another">
+                <view class="see icon">
+                  <mp-icon icon="eyes-on" size="{{10}}" color="#999999"></mp-icon>
+                  <text>33</text>
+                </view>
+                <view class="like icon">
+                  <mp-icon icon="like" size="{{10}}" color="#999999"></mp-icon>
+                  <text>22</text>
+                </view>
+                <view class="comment icon">
+                  <mp-icon icon="comment" size="{{10}}" color="#999999"></mp-icon>
+                  <text>20</text>
+                </view>
+                <view class="time icon">
+                  <mp-icon icon="time" size="{{10}}" color="#999999"></mp-icon>
+                  <text>2019-12-28</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="scroll-view-item">
+            <image src="/images/1.jpeg"></image>
+            <view class="post-mess">
+              <text class="mess-title">关于前端页面，产品经理
+该如何理解如何设</text>
+              <view class="mess-another">
+                <view class="see icon">
+                  <mp-icon icon="eyes-on" size="{{10}}" color="#999999"></mp-icon>
+                  <text>33</text>
+                </view>
+                <view class="like icon">
+                  <mp-icon icon="like" size="{{10}}" color="#999999"></mp-icon>
+                  <text>22</text>
+                </view>
+                <view class="comment icon">
+                  <mp-icon icon="comment" size="{{10}}" color="#999999"></mp-icon>
+                  <text>20</text>
+                </view>
+                <view class="time icon">
+                  <mp-icon icon="time" size="{{10}}" color="#999999"></mp-icon>
+                  <text>2019-12-28</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="scroll-view-item">
+            <image src="/images/3.jpeg"></image>
+            <view class="post-mess">
+              <text class="mess-title">关于前端页面，产品经理
+该如何理解如何设</text>
+              <view class="mess-another">
+                <view class="see icon">
+                  <mp-icon icon="eyes-on" size="{{10}}" color="#999999"></mp-icon>
+                  <text>33</text>
+                </view>
+                <view class="like icon">
+                  <mp-icon icon="like" size="{{10}}" color="#999999"></mp-icon>
+                  <text>22</text>
+                </view>
+                <view class="comment icon">
+                  <mp-icon icon="comment" size="{{10}}" color="#999999"></mp-icon>
+                  <text>20</text>
+                </view>
+                <view class="time icon">
+                  <mp-icon icon="time" size="{{10}}" color="#999999"></mp-icon>
+                  <text>2019-12-28</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="scroll-view-item">
+            <image src="/images/1.jpeg"></image>
+            <view class="post-mess">
+              <text class="mess-title">关于前端页面，产品经理
+该如何理解如何设</text>
+              <view class="mess-another">
+                <view class="see icon">
+                  <mp-icon icon="eyes-on" size="{{10}}" color="#999999"></mp-icon>
+                  <text>33</text>
+                </view>
+                <view class="like icon">
+                  <mp-icon icon="like" size="{{10}}" color="#999999"></mp-icon>
+                  <text>22</text>
+                </view>
+                <view class="comment icon">
+                  <mp-icon icon="comment" size="{{10}}" color="#999999"></mp-icon>
+                  <text>20</text>
+                </view>
+                <view class="time icon">
+                  <mp-icon icon="time" size="{{10}}" color="#999999"></mp-icon>
+                  <text>2019-12-28</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="scroll-view-item">
+            <image src="/images/1.jpeg"></image>
+            <view class="post-mess">
+              <text class="mess-title">关于前端页面，产品经理
+该如何理解如何设哈哈哈哈哈哈</text>
+              <view class="mess-another">
+                <view class="see icon">
+                  <mp-icon icon="eyes-on" size="{{10}}" color="#999999"></mp-icon>
+                  <text>33</text>
+                </view>
+                <view class="like icon">
+                  <mp-icon icon="like" size="{{10}}" color="#999999"></mp-icon>
+                  <text>22</text>
+                </view>
+                <view class="comment icon">
+                  <mp-icon icon="comment" size="{{10}}" color="#999999"></mp-icon>
+                  <text>20</text>
+                </view>
+                <view class="time icon">
+                  <mp-icon icon="time" size="{{10}}" color="#999999"></mp-icon>
+                  <text>2019-12-28</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
 </view>

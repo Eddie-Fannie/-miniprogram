@@ -1,0 +1,37 @@
+<!--miniprogram/pages/clubPostDetail/clubPostDetail.wxml-->
+<view class="post-detail">
+  <image src="/images/1.jpeg"></image>
+  <view class="all-post">
+    <view class="other-mess">
+      <text class="post-title">作品粗糙不耐看？用实战案例
+教你快速提升作品质感！</text>
+      <view class="category-time">
+        <text class="post-category">Vue</text>
+        <text class="post-time">发布于 2019-03-01</text>
+      </view>
+    </view>
+    <view class="article">
+      <rich-text nodes="<p>2020年2月1日，中国知网官方发布了一条信息：关于中国知网免费服务项目的说明。</p><p>其实吧，并没有免费。但是给了我另外一点启发：</p><p>我们在写论文或期刊的时候，有3步：</p><p>当我们面对比较大型的需求点时，我们需要研究竞品，了解用户痛点。而对于B端的产品通常会遇到下列问题：</p>"></rich-text>
+      <view class="post-tag">
+        <text>机器人</text>
+        <text>延报</text>
+        <text>前端</text>
+      </view>
+    </view>
+    <view class="caozuo">
+      <button class="like">
+        <mp-icon icon="like" color="{{btnLikeColor}}"></mp-icon>
+        <text>点赞</text>
+      </button>
+      <button class="share">
+        <mp-icon icon="share" color="{{btnShareColor}}"></mp-icon>
+        <text>分享</text>
+      </button>
+    </view>
+    <view class="comment">
+      <text>文章评论</text>
+      <input placeholder="说点什么吧..." bindfocus="bindKeyFocus" cursor="8"></input>
+      <button><text>发送</text></button>
+    </view>
+  </view>
+</view>

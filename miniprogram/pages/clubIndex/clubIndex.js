@@ -12,9 +12,45 @@ Page({
     background: [img1, img2, img3],
     indicatorDots: true, //是否显示面板指示点
     vertical: false, //滑动方向是否为纵向
-    autoplay: false,//是否自动切换
+    autoplay: true,//是否自动切换
     interval: 2000,//是否自动切换时间间隔
-    duration: 500 //滑动动画时长
+    duration: 1500, //滑动动画时长
+    tipColor: 'white',//指示点的颜色
+    tipActiveColor: 'blue',//指示点被选择的颜色
+    titleList: ['最新发布','最多阅读','最多点赞','最多评论'],
+    listNowIndex: 0
+  },
+  upper(e) {
+    console.log(e)
+  },
+
+  lower(e) {
+    console.log(e)
+  },
+
+  scroll(e) {
+    console.log(e)
+  },
+
+  scrollToTop() {
+    this.setAction({
+      scrollTop: 0
+    })
+  },
+  chooseTitle(e) {
+    console.log(e)
+    this.setData({
+      listNowIndex : e.currentTarget.dataset.index
+    })
+  },
+  toPostDetail(){
+    wx.navigateTo({
+      url: "/pages/clubPostDetail/clubPostDetail",
+      success(e) {
+        console.log(e)
+        console.log('跳转成功')
+      }
+    })
   },
 
   /**
