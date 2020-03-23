@@ -17,13 +17,16 @@
   color: #969696;
 }
 #customize-comment-component button {
-  width: 144rpx !important;
-  height: 60rpx !important;
-  line-height: 60rpx !important;
-  border-radius: 28px !important;
+  width: 150rpx;
+  min-height: 60rpx !important;
+  border-radius: 28px;
   margin-bottom: 28rpx;
   margin-right: 0rpx;
   background-color: #42C02E;
+  font-size: 24rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #ffffff;
 }
 #customize-comment-component button text {
   font-size: 24rpx !important;
@@ -34,4 +37,5 @@
 #customize-comment-component .line {
   height: 1px;
   background-color: #EAEAEA;
+  margin-bottom: 40rpx;
 }

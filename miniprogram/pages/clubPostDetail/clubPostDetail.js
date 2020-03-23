@@ -7,10 +7,13 @@ Page({
   data: {
     btnLikeColor: 'white',
     btnShareColor: 'white',
-    btnBillColor: 'white'
+    btnBillColor: 'white',
+    showComment: false
   },
-  bindKeyFocus(e) {
-    console.log(e)
+  commentShow() {
+    this.setData({
+      showComment: true
+    })
   },
 
   /**

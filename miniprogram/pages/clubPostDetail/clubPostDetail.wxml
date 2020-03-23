@@ -3,8 +3,7 @@
   <image src="/images/1.jpeg"></image>
   <view class="all-post">
     <view class="other-mess">
-      <text class="post-title">作品粗糙不耐看？用实战案例
-教你快速提升作品质感！</text>
+      <text class="post-title">作品粗糙不耐看？用实战案例教你快速提升作品质感！</text>
       <view class="category-time">
         <text class="post-category">Vue</text>
         <text class="post-time">发布于 2019-03-01</text>
@@ -51,14 +50,14 @@
         <view class="comment-caozuo">
           <view class="btn-comment btn-first">
             <mp-icon icon="comment" color="rgba(153,153,153,1)"></mp-icon>
-            <text>回复</text>
+            <text catchtap="commentShow">回复</text>
           </view>
           <view class="btn-comment">
             <mp-icon icon="like" color="rgba(153,153,153,1)"></mp-icon>
             <text>20</text>
           </view>
         </view>
-        <cust-comment></cust-comment>
+        <cust-comment wx:if="{{showComment}}"></cust-comment>
       </view>
     </view>
   </view>
