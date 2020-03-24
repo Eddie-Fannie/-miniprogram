@@ -1,7 +1,4 @@
-#customize-comment-component {
-
-}
-#customize-comment-component input {
+.customize-comment-component .input-comment {
   width: 670rpx;
   height: 68rpx;
   background-color: #f8f8f8;
@@ -9,16 +6,16 @@
   border: 1px solid #ccc;
   margin-bottom: 30rpx;
 }
-#customize-comment-component .input-placeholder {
+.customize-comment-component .input-placeholder {
   padding-left: 16rpx;
   font-size: 28rpx;
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
   color: #969696;
 }
-#customize-comment-component button {
+.customize-comment-component .comment-send {
   width: 150rpx;
-  min-height: 60rpx !important;
+  min-height: 60rpx;
   border-radius: 28px;
   margin-bottom: 28rpx;
   margin-right: 0rpx;
@@ -28,13 +25,7 @@
   font-weight: 500;
   color: #ffffff;
 }
-#customize-comment-component button text {
-  font-size: 24rpx !important;
-  font-family: PingFangSC-Medium, PingFang SC;
-  font-weight: 500;
-  color: #ffffff !important;
-}
-#customize-comment-component .line {
+.customize-comment-component .line {
   height: 1px;
   background-color: #EAEAEA;
   margin-bottom: 40rpx;
