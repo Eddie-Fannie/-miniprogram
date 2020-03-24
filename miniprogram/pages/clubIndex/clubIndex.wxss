@@ -1,44 +1,29 @@
-.swiper-post{
-
-}
-.swiper-post swiper{
-
-}
-.swiper-post swiper swiper-item{
-
-}
-.swiper-post swiper swiper-item image{
+.swiper-post swiper swiper-item image {
   width: 750rpx;
   height: 300rpx;
-  /* border-radius: 12rpx; */
-  /* padding-left: 40rpx; */
-  /* margin-left: 40rpx; */
 }
-.scroll-titles{
+.scroll-titles {
   margin: 48rpx auto 0rpx;
   width: 670rpx;
 }
-.scroll-view_H{
+.scroll-titles .scroll-view_H {
   white-space: nowrap;
 }
-.scroll-view-item_H{
+.scroll-titles .scroll-view_H .scroll-view-item_H {
   display: inline-block;
   width: 140rpx;
   height: 72rpx;
   text-align: center;
   margin-right: 72rpx;
 }
-.tap-active{
+.scroll-titles .scroll-view_H .tap-active {
   color: red;
   border-bottom: 3px solid red;
 }
-.post-list{
-
-}
-.post-list scroll-view{
+.post-list scroll-view {
   height: 866rpx;
 }
-.scroll-view-item{
+.post-list scroll-view .scroll-view-item {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -47,59 +32,58 @@
   width: 670rpx;
   margin: 0 auto;
 }
-.scroll-view-item image{
+.post-list scroll-view .scroll-view-item image {
   width: 288rpx;
   height: 130rpx;
   padding-right: 40rpx;
 }
-.scroll-view-item .post-mess{
+.post-list scroll-view .scroll-view-item .post-mess {
   width: 346rpx;
   height: 130rpx;
   display: flex;
   flex-direction: column;
   /* justify-content: space-around; */
 }
-.post-mess .mess-title{
-  font-size:30rpx;
-  font-family:PingFangSC-Semibold,PingFang SC;
-  font-weight:600;
-  color:rgba(51,51,51,1);
-  overflow:hidden;
-  text-overflow:ellipsis;
-  display:-webkit-box;
-  -webkit-box-orient:vertical;
-  -webkit-line-clamp:2;
-  line-height:21px;
+.post-list scroll-view .scroll-view-item .post-mess .mess-title {
+  font-size: 30rpx;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 21px;
   padding-bottom: 12rpx;
 }
-.post-mess .mess-another{
+.post-list scroll-view .scroll-view-item .post-mess .mess-another {
   display: flex;
   flex-direction: row;
-
 }
-.mess-another .icon{
+.post-list scroll-view .scroll-view-item .post-mess .mess-another .icon {
   /* width: 50rpx; */
   height: 40rpx;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.mess-another .icon mp-icon{
-  padding-right:4rpx;
+.post-list scroll-view .scroll-view-item .post-mess .mess-another .icon mp-icon {
+  padding-right: 4rpx;
 }
-.mess-another .icon text{
-  font-size:20rpx;
-  font-family:PingFangSC-Medium,PingFang SC;
-  font-weight:500;
-  color:rgba(153,153,153,1);
-  line-height:24px;
+.post-list scroll-view .scroll-view-item .post-mess .mess-another .icon text {
+  font-size: 20rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #999999;
+  line-height: 24px;
 }
-.mess-another .see{
+.post-list scroll-view .scroll-view-item .post-mess .mess-another .see {
   margin-right: 10rpx;
 }
-.mess-another .like{
+.post-list scroll-view .scroll-view-item .post-mess .mess-another .like {
   margin-right: 10rpx;
 }
-.mess-another .comment{
+.post-list scroll-view .scroll-view-item .post-mess .mess-another .comment {
   margin-right: 30rpx;
 }

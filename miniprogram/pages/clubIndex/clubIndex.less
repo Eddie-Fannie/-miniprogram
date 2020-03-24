@@ -1,6 +1,97 @@
-.swiper-item{
-    background-color: green;
+.swiper-post{
+    swiper{
+        swiper-item{
+            image{
+                width: 750rpx;
+                height: 300rpx;
+            }
+        }
+    }
 }
-.demo-text-1{
-    background-color: red;
+.scroll-titles{
+    margin: 48rpx auto 0rpx;
+    width: 670rpx;
+    .scroll-view_H{
+        white-space: nowrap;
+        .scroll-view-item_H{
+            display: inline-block;
+            width: 140rpx;
+            height: 72rpx;
+            text-align: center;
+            margin-right: 72rpx;
+        }
+        .tap-active{
+            color: red;
+            border-bottom: 3px solid red;
+        }
+    }
+}
+.post-list{
+    scroll-view{
+        height: 866rpx;
+        .scroll-view-item{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            height: 180rpx;
+            width: 670rpx;
+            margin: 0 auto;
+            image{
+                width: 288rpx;
+                height: 130rpx;
+                padding-right: 40rpx;
+            }
+            .post-mess{
+                width: 346rpx;
+                height: 130rpx;
+                display: flex;
+                flex-direction: column;
+                /* justify-content: space-around; */
+                .mess-title{
+                    font-size:30rpx;
+                    font-family:PingFangSC-Semibold,PingFang SC;
+                    font-weight:600;
+                    color:rgba(51,51,51,1);
+                    overflow:hidden;
+                    text-overflow:ellipsis;
+                    display:-webkit-box;
+                    -webkit-box-orient:vertical;
+                    -webkit-line-clamp:2;
+                    line-height:21px;
+                    padding-bottom: 12rpx;
+                }
+                .mess-another{
+                    display: flex;
+                    flex-direction: row;
+                    .icon{
+                        /* width: 50rpx; */
+                        height: 40rpx;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        mp-icon{
+                            padding-right:4rpx;
+                        }
+                        text{
+                            font-size:20rpx;
+                            font-family:PingFangSC-Medium,PingFang SC;
+                            font-weight:500;
+                            color:rgba(153,153,153,1);
+                            line-height:24px;
+                        }
+                    }
+                    .see{
+                        margin-right: 10rpx;
+                    }
+                    .like{
+                        margin-right: 10rpx;
+                    }
+                    .comment{
+                        margin-right: 30rpx;
+                    }
+                }
+            }
+        }
+    }
 }
