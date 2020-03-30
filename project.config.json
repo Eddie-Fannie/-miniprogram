@@ -39,8 +39,8 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "pages/clubPostDetail/clubPostDetail",
-					"pathName": "pages/clubPostDetail/clubPostDetail",
+					"name": "pages/clubMe/clubMe",
+					"pathName": "pages/clubMe/clubMe",
 					"query": "",
 					"scene": null
 				}

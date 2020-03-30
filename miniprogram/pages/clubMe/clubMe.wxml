@@ -1,2 +1,5 @@
 <!--miniprogram/pages/clubMe/clubMe.wxml-->
-<text>miniprogram/pages/clubMe/clubMe.wxml</text>
+<view class="user-top">
+  
+</view>
+<view class="user-bottom"></view>
