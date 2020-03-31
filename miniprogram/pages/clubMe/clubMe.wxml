@@ -1,5 +1,8 @@
 <!--miniprogram/pages/clubMe/clubMe.wxml-->
 <view class="user-top">
-  
+  <view class="user-mess">
+    <image class="user-avatar" src='/images/3.jpeg'></image>
+    <text class="user-nickname">Dovis</text>
+  </view>
 </view>
 <view class="user-bottom"></view>
