@@ -5,4 +5,13 @@
     <text class="user-nickname">Dovis</text>
   </view>
 </view>
-<view class="user-bottom"></view>
+<view class="user-bottom">
+  <view class="control-list">
+      <block wx:for="{{controlLists}}" wx:key="idx" wx:for-item="itemName">
+        <view class="control-item">
+          <text class="control-title">{{itemName}}</text>
+          <mp-icon icon="arrow" color="#999" size="{{10}}"></mp-icon>
+        </view>
+      </block>
+  </view>
+</view>

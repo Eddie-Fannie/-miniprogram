@@ -1,15 +1,49 @@
 .user-top{
+    position: relative;
     width: 100%;
     height: 420rpx;
     background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1585582972948&di=9e261762dcc3598032d0d4fe04313846&imgtype=0&src=http%3A%2F%2F03imgmini.eastday.com%2Fmobile%2F20191028%2F20191028162949_d04e0a6dac56aef81d1b03d072527bd2_1_mwpm_03201609.jpg');
     background-size: cover;
     .user-mess{
+        position: absolute;
+        left: 53rpx;
+        top: 120rpx;
         display:flex;
         align-items: center;
         justify-content: flex-start;
         image{
             width: 113rpx;
             height: 113rpx;
+            border-radius: 50%;
+            margin-right: 14rpx;
+        }
+        .user-nickname{
+            font-size:32rpx;
+            font-family:PingFangSC-Medium,PingFang SC;
+            font-weight:500;
+            color:rgba(255,255,255,1);
+            line-height:45px;
+        }
+    }
+}
+.user-bottom{
+    .control-list{
+        .control-item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #EFF2F8;
+            padding: 0 34rpx 0 42rpx;
+            .control-title{
+                font-size:30rpx;
+                font-family:PingFangSC-Regular,PingFang SC;
+                font-weight:400;
+                color:rgba(51,51,51,1);
+                line-height:42px;
+            }
+            mp-icon{
+
+            }
         }
     }
 }

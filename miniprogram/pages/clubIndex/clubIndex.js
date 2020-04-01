@@ -18,7 +18,50 @@ Page({
     tipColor: 'white',//指示点的颜色
     tipActiveColor: 'blue',//指示点被选择的颜色
     titleList: ['最新发布','最多阅读','最多点赞','最多评论'],
-    listNowIndex: 0
+    listNowIndex: 0,
+    postListData: [{
+      coverImg: '/images/1.jpeg',
+      postTitle: '关于前端页面，产品经理该如何理解如何设哈哈哈哈哈哈',
+      seeNum: 33,
+      likeNum: 22,
+      commentNum: 20,
+      postTime: '2019-12-28'
+    }, {
+        coverImg: '/images/2.jpeg',
+        postTitle: '关于前端页面，产品经理该如何理解如何设哈哈哈哈哈哈',
+        seeNum: 33,
+        likeNum: 22,
+        commentNum: 20,
+        postTime: '2019-12-28'
+      }, {
+        coverImg: '/images/3.jpeg',
+        postTitle: '关于前端页面，产品经理该如何理解如何设哈哈哈哈哈哈',
+        seeNum: 33,
+        likeNum: 22,
+        commentNum: 20,
+        postTime: '2019-12-28'
+      }, {
+        coverImg: '/images/bgc.png',
+        postTitle: '关于前端页面，产品经理该如何理解如何设哈哈哈哈哈哈',
+        seeNum: 33,
+        likeNum: 22,
+        commentNum: 20,
+        postTime: '2019-12-28'
+      }, {
+        coverImg: '/images/1.jpeg',
+        postTitle: '关于前端页面，产品经理该如何理解如何设哈哈哈哈哈哈',
+        seeNum: 33,
+        likeNum: 22,
+        commentNum: 20,
+        postTime: '2019-12-28'
+      }, {
+        coverImg: '/images/3.jpeg',
+        postTitle: '关于前端页面，产品经理该如何理解如何设哈哈哈哈哈哈',
+        seeNum: 33,
+        likeNum: 22,
+        commentNum: 20,
+        postTime: '2019-12-28'
+      }]
   },
   upper(e) {
     console.log(e)

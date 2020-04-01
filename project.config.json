@@ -43,6 +43,12 @@
 					"pathName": "pages/clubMe/clubMe",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/clubIndex/clubIndex",
+					"pathName": "pages/clubIndex/clubIndex",
+					"scene": null
 				}
 			]
 		}
