@@ -7,16 +7,30 @@ Page({
   data: {
     controlLists: [
       '我的浏览','我的点赞','我的收藏','意见反馈','联系开发者','日志更新','消息订阅'
-    ]
+    ],
+    hasUserInfo: true,
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // wx.getSetting({
+    //   success(res) {
+    //     if(res.authSetting['scope.userInfo']) {
+    //       wx.getUserInfo({
+    //         success: function(res) {
+    //           console.log(res.userInfo)
+    //         }
+    //       })
+    //     }
+    //   }
+    // })
   },
-
+  bindGetUserInfo(e) {
+    console.log(e.detail.userInfo)
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

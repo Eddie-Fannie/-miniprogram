@@ -1,8 +1,14 @@
 <!--miniprogram/pages/clubMe/clubMe.wxml-->
 <view class="user-top">
-  <view class="user-mess">
-    <image class="user-avatar" src='/images/3.jpeg'></image>
-    <text class="user-nickname">Dovis</text>
+  <view class="no-user-mess container" wx:if="{{canIUse}}">
+    <image class="default-avatar" src='/images/wodehui.png'></image>
+    <button class="get-userinfo" plain="true" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">请点击获取头像和昵称</button>
+  </view>
+  <view class="user-mess container" wx:else>
+   <!-- <image class="user-avatar" src='/images/3.jpeg'></image>
+    <text class="user-nickname">Dovis</text> -->
+    <open-data type="userAvatarUrl"></open-data>
+    <open-data type="userNickName"></open-data>
   </view>
 </view>
 <view class="user-bottom">
