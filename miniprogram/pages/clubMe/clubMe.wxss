@@ -39,14 +39,18 @@
   color: #ffffff;
   line-height: 45px;
 }
-.user-bottom .control-list .control-item {
+.user-bottom .control-list button {
+  width: 100%;
+  padding: 0;
+}
+.user-bottom .control-list button .control-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #EFF2F8;
   padding: 0 34rpx 0 42rpx;
 }
-.user-bottom .control-list .control-item .control-title {
+.user-bottom .control-list button .control-item .control-title {
   font-size: 30rpx;
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;

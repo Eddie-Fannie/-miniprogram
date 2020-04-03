@@ -18,30 +18,30 @@
 </view>
 <view class="post-list">
         <scroll-view scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
-          <block wx:for="{{postListData}}" wx:key="index" wx:for-item="item">
-            <view class="scroll-view-item">
-            <image src="{{item.coverImg}}"></image>
-            <view class="post-mess">
-              <text class="mess-title">{{item.postTitle}}</text>
-              <view class="mess-another">
-                <view class="see icon">
-                  <mp-icon icon="eyes-on" size="{{10}}" color="#999999"></mp-icon>
-                  <text>{{item.seeNum}}</text>
-                </view>
-                <view class="like icon">
-                  <mp-icon icon="like" size="{{10}}" color="#999999"></mp-icon>
-                  <text>{{item.likeNum}}</text>
-                </view>
-                <view class="comment icon">
-                  <mp-icon icon="comment" size="{{10}}" color="#999999"></mp-icon>
-                  <text>{{item.commentNum}}</text>
-                </view>
-                <view class="time icon">
-                  <mp-icon icon="time" size="{{10}}" color="#999999"></mp-icon>
-                  <text>{{item.postTime}}</text>
+          <block wx:for="{{postListData}}" wx:key="index" wx:for-item="item" >
+            <view class="scroll-view-item" data-post-id="{{item.postId}}" catchtap="toPostDetail">
+              <image src="{{item.coverImg}}"></image>
+              <view class="post-mess">
+                <text class="mess-title">{{item.postTitle}}</text>
+                <view class="mess-another">
+                  <view class="see icon">
+                    <mp-icon icon="eyes-on" size="{{10}}" color="#999999"></mp-icon>
+                    <text>{{item.seeNum}}</text>
+                  </view>
+                  <view class="like icon">
+                    <mp-icon icon="like" size="{{10}}" color="#999999"></mp-icon>
+                    <text>{{item.likeNum}}</text>
+                  </view>
+                  <view class="comment icon">
+                    <mp-icon icon="comment" size="{{10}}" color="#999999"></mp-icon>
+                    <text>{{item.commentNum}}</text>
+                  </view>
+                  <view class="time icon">
+                    <mp-icon icon="time" size="{{10}}" color="#999999"></mp-icon>
+                    <text>{{item.postTime}}</text>
+                  </view>
                 </view>
               </view>
-            </view>
           </view>
           </block>
         </scroll-view>
