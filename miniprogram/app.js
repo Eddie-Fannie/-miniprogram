@@ -1,7 +1,7 @@
 //app.js
 App({
   globalData: {
-    g_userInfo: null
+    
   },
   onLaunch: function () {
     
@@ -19,32 +19,6 @@ App({
     }
 
     // this.globalData = {}
-    this._getUserInfo()
-  },
-  //获取用户基本信息
-  _getUserInfo() {
-    var userInfoStorage = wx.getStorageSync('user');
-    if(!userInfoStorage) {
-      //如果缓存没有用户信息，就获取用户信息
-      var that = this;
-      wx.login({
-        success: function() {
-          wx.getUserInfo({
-            success: function(res){
-              that.globalData.g_userInfo = res.userInfo
-              //将用户的基本信息保存到缓存中
-              wx.setStorageSync('user', res.userInfo)
-            },
-            fail: function(res){
-              console.log(res)
-            }
-          })
-        }
-      })
-    }
-    else {
-      //如果缓存有基本信息，那么将信息保存到全局变量中去
-      this.globalData.g_userInfo = userInfoStorage
-    }
+    // this._getUserInfo()
   }
 })

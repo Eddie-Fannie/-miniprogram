@@ -1,5 +1,4 @@
 // miniprogram/pages/clubMe/clubMe.js
-var app = getApp()
 Page({
   
   /**
@@ -15,7 +14,6 @@ Page({
       { title: '日志更新', opentype: ''},
       { title: '消息订阅', opentype: ''}
     ],
-    // hasUserInfo: true,
     // canIUse: wx.canIUse('button.open-type.getUserInfo'),
     userInfo: null
   },
@@ -24,23 +22,57 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      userInfo: app.globalData.g_userInfo
-    })
-    // wx.getSetting({
-    //   success(res) {
-    //     if(res.authSetting['scope.userInfo']) {
-    //       wx.getUserInfo({
-    //         success: function(res) {
-    //           console.log(res.userInfo)
-    //         }
-    //       })
-    //     }
-    //   }
-    // })
+    this.isLogin()
   },
-  bindGetUserInfo(e) {
+  //判断用户是否登录了
+  isLogin() {
+    let userStorage = wx.getStorageSync('user')
+    if(!userStorage) {
+      wx.showModal({
+        content: '登录获取更多权限',
+        cancelText: '暂不登录',
+        cancelColor: '#4193e2',
+        confirmText: '登录',
+        confirmColor: '#4193e2',
+        success(res) {
+          if(res.confirm) {
+            var that = this
+            wx.login({
+              success: function(res) {
+                console.log(res)
+                wx.getUserInfo({
+                  success: function (res) {
+                    console.log(res)
+                    //将用户的基本信息保存到缓存中
+                    wx.setStorageSync('user', res.userInfo)
+                    that.setData({
+                      userInfo: res.userInfo
+                    })
+                  },
+                  fail: function (res) {
+                    console.log(res)
+                  }
+                })
+              },
+              fail: function(res) {
+                console.log(res)
+              }
+            })
+          }
+        }
+      })
+    } else {
+      this.setData({
+        userInfo: userStorage
+      })
+    }
+  },
+  //点击获取个人信息
+  getUserInfo(e) {
     console.log(e.detail.userInfo)
+    this.setData({
+      userInfo: e.detail.userInfo
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

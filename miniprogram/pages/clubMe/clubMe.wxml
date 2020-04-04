@@ -2,7 +2,7 @@
 <view class="user-top">
   <view class="no-user-mess container" wx:if="{{!userInfo}}">
     <image class="default-avatar" src='/images/wodehui.png'></image>
-    <button class="get-userinfo" plain="true" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">请点击获取头像和昵称</button>
+    <button class="get-userinfo" plain="true" open-type="getUserInfo" bindgetuserinfo="getUserInfo">请点击获取头像和昵称</button>
   </view>
   <view class="user-mess container" wx:else>
    <image class="user-avatar" src="{{userInfo.avatarUrl}}"></image>
